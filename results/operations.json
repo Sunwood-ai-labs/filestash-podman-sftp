@@ -1,0 +1,32 @@
+{
+  "source": "docs/QA-basic.md と docs/RESULTS-extended.md の結果表を、操作ごとに1行へ書き写したもの。status は confirmed（確認できた）、confirmed_with_note（確認できたが注記あり）、unconfirmed（確認できなかった）の3値。",
+  "date": "2026-10-10",
+  "filestash_ui_version": "v0.6.20261009",
+  "operations": [
+    {"group": "接続と表示", "name": "SFTP接続とログイン", "status": "confirmed", "note": "ログイン後に共有フォルダーの一覧を表示"},
+    {"group": "接続と表示", "name": "日本語のファイル名・フォルダー名", "status": "confirmed", "note": "欠けや文字化けなし"},
+    {"group": "接続と表示", "name": "グリッド／リスト表示の切替", "status": "confirmed", "note": "両方向に切替"},
+    {"group": "接続と表示", "name": "名前順の並び替え", "status": "confirmed", "note": ""},
+    {"group": "接続と表示", "name": "日本語での名前検索", "status": "confirmed", "note": "開いているフォルダー内の名前絞り込み"},
+    {"group": "プレビュー", "name": "テキストの表示", "status": "confirmed", "note": "日本語の本文を表示"},
+    {"group": "プレビュー", "name": "画像（PNG）のプレビュー", "status": "confirmed", "note": ""},
+    {"group": "プレビュー", "name": "Markdownの表示", "status": "confirmed_with_note", "note": "色分けされたソース表示。整形表示ではない"},
+    {"group": "プレビュー", "name": "音声（WAV）の再生", "status": "confirmed_with_note", "note": "再生位置の進行まで。音は聞いていない"},
+    {"group": "プレビュー", "name": "動画（MP4）の再生", "status": "confirmed_with_note", "note": "再生位置の進行まで"},
+    {"group": "プレビュー", "name": "PDFの表示", "status": "unconfirmed", "note": "本文の領域が空白のまま"},
+    {"group": "ファイル操作", "name": "新規ファイルの作成と保存", "status": "confirmed_with_note", "note": "保存中の表示が画面に残る。内容は保存済み"},
+    {"group": "ファイル操作", "name": "アップロード（1件）", "status": "confirmed_with_note", "note": "完了後も速度表示が0.0B/sのまま"},
+    {"group": "ファイル操作", "name": "ダウンロード（1件）", "status": "confirmed", "note": "SHA-256が元ファイルと一致"},
+    {"group": "ファイル操作", "name": "ファイル名の変更", "status": "confirmed", "note": "日本語名へ変更"},
+    {"group": "ファイル操作", "name": "ファイルの削除", "status": "confirmed", "note": "サーバー側の一覧でも消えたことを確認"},
+    {"group": "ファイル操作", "name": "Markdownの編集と保存", "status": "confirmed_with_note", "note": "元に戻すと改行コードの違いで1バイト差"},
+    {"group": "ファイル操作", "name": "複数選択", "status": "confirmed", "note": "操作欄はダウンロードと削除"},
+    {"group": "ファイル操作", "name": "ZIPでの一括ダウンロード", "status": "confirmed_with_note", "note": "中身は一致。自動操作側の待機は30秒でタイムアウト"},
+    {"group": "ファイル操作", "name": "複数ファイルのアップロード", "status": "unconfirmed", "note": "ファイル選択が開かずタイムアウト"},
+    {"group": "フォルダーと権限", "name": "フォルダーの作成", "status": "confirmed", "note": ""},
+    {"group": "フォルダーと権限", "name": "フォルダー名の変更", "status": "confirmed_with_note", "note": "2回目で確認。1回目は表示と通知が不一致"},
+    {"group": "フォルダーと権限", "name": "フォルダーの削除", "status": "confirmed", "note": ""},
+    {"group": "フォルダーと権限", "name": "読み取り専用フォルダーへの書込拒否", "status": "confirmed", "note": "「アクセスが拒否されました」と表示"},
+    {"group": "フォルダーと権限", "name": "共有リンクの作成", "status": "unconfirmed", "note": "設定の途中でダイアログが閉じ、作成に至らず"}
+  ]
+}

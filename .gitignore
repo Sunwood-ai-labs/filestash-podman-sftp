@@ -1,0 +1,3 @@
+quickstart/private/
+__pycache__/
+*.log

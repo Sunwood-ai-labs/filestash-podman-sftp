@@ -1,0 +1,2 @@
+短い音声.wav duration_s=3.000000 exit=0
+短い動画.mp4 duration_s=3.000000 exit=0

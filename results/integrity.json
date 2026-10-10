@@ -1,0 +1,42 @@
+{
+  "source": "docs/QA-basic.md、docs/RESULTS-extended.md、docs/independent-review.md の記載と results/raw/ のCSV・JSONから、照合の種類ごとにまとめたもの。",
+  "checks": [
+    {
+      "name": "フィクスチャの配置",
+      "detail": "ローカルの8ファイルとSFTPサーバー上の8ファイル",
+      "matched": null,
+      "total": null,
+      "raw": "raw/fixture-hash-comparison.csv"
+    },
+    {
+      "name": "アップロードしてダウンロード",
+      "detail": "画面から上げたファイルを画面から取得し、元と比較",
+      "matched": 1,
+      "total": 1,
+      "sha256": "46BB5D0FEA6204914FE93F888640689035B5089029C7F4FE8C6EAB3782BD7F2A"
+    },
+    {
+      "name": "ZIPでの一括ダウンロード",
+      "detail": "ZIPに入っていた2ファイルと元ファイル",
+      "matched": null,
+      "total": null,
+      "raw": "raw/zip-verification.json"
+    },
+    {
+      "name": "読み取り専用の2ファイル",
+      "detail": "すべての操作が終わった後のサーバー上のファイルと初期値",
+      "matched": null,
+      "total": null,
+      "raw": "raw/readonly-initial-hash-comparison.csv"
+    },
+    {
+      "name": "Markdownを編集して元に戻す",
+      "detail": "画面で1行追記して保存し、追記を消して保存し直したファイルと初期値",
+      "matched": 0,
+      "total": 1,
+      "initial_bytes": 873,
+      "restored_bytes": 872,
+      "note": "改行コードをそろえると本文は一致"
+    }
+  ]
+}

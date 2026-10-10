@@ -1,0 +1,19 @@
+{
+  "archive": "download.zip",
+  "archive_bytes": 847,
+  "crc_error": null,
+  "entries": [
+    {
+      "entry": "README.md",
+      "size": 873,
+      "sha256": "53b63ad0df4e3350f91ba6b03fad03fe043d28e100bfdf47ca838fc240bd99c9",
+      "matches_initial_fixture": true
+    },
+    {
+      "entry": "確認メモ.txt",
+      "size": 119,
+      "sha256": "82bfc0ea77d2718dcd78ee1baec081ae630757e0d7c7be6484ee998e95594b30",
+      "matches_initial_fixture": true
+    }
+  ]
+}
