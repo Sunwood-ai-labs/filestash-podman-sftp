@@ -84,6 +84,94 @@ Filestashは、SFTPサーバー上のファイルに対する25の操作のう�
 
 確認できなかった3つは、PDFの表示（本文の領域が空白のまま）、複数ファイルの同時アップロード（ファイルを選ぶ画面が開かなかった）、共有リンクの作成（設定の途中でダイアログが閉じた）です。
 
+### 画面で見る
+
+実験で撮った36枚のうち14枚を載せます。どれもFilestash v0.6.20261009の画面で、写っているのはテスト用に作ったファイルだけです。
+
+**テスト用ファイルを置いたフォルダーの一覧**
+
+![テスト用ファイルを置いたフォルダーの一覧](https://raw.githubusercontent.com/Sunwood-ai-labs/filestash-podman-sftp/main/assets/screenshots/11-extended-listing.png)
+
+日本語の名前がそのまま並び、画像はサムネイルで表示されます。左には開いているフォルダーの階層が出ます。
+
+**リスト表示**
+
+![リスト表示](https://raw.githubusercontent.com/Sunwood-ai-labs/filestash-podman-sftp/main/assets/screenshots/02-list.png)
+
+同じフォルダーをリスト表示に切り替えた画面です。サイズと更新日が並びます。
+
+**日本語での名前検索**
+
+![日本語での名前検索](https://raw.githubusercontent.com/Sunwood-ai-labs/filestash-podman-sftp/main/assets/screenshots/04-search-jp.png)
+
+検索欄に「説明」と入れると、開いているフォルダーの中で名前が一致する1件に絞り込まれました。
+
+**画像のプレビュー**
+
+![画像のプレビュー](https://raw.githubusercontent.com/Sunwood-ai-labs/filestash-podman-sftp/main/assets/screenshots/05-image-preview.png)
+
+PNGは画面の中でそのまま開けました。右上のアイコンから全画面表示とダウンロードができます。
+
+**Markdownの表示**
+
+![Markdownの表示](https://raw.githubusercontent.com/Sunwood-ai-labs/filestash-podman-sftp/main/assets/screenshots/19-markdown-view.png)
+
+Markdownは色分けされたソースとして表示されます。見出しや表が整形された表示にはなりません。
+
+**Markdownを編集して保存した直後**
+
+![Markdownを編集して保存した直後](https://raw.githubusercontent.com/Sunwood-ai-labs/filestash-podman-sftp/main/assets/screenshots/31-markdown-saved.png)
+
+最終行に1行を追記して保存した直後の画面です。タイトルには未保存を示す「*」が残っていますが、サーバー上のファイルには追記が保存されていました。
+
+**アップロードの完了通知**
+
+![アップロードの完了通知](https://raw.githubusercontent.com/Sunwood-ai-labs/filestash-podman-sftp/main/assets/screenshots/06-upload.png)
+
+右下の通知は「完了しました」と表示しつつ、速度は0.0B/sのままでした。ファイルは一覧に現れ、ダウンロードした中身も元と一致しています。
+
+**複数選択**
+
+![複数選択](https://raw.githubusercontent.com/Sunwood-ai-labs/filestash-podman-sftp/main/assets/screenshots/15-multi-select.png)
+
+2つのファイルを選ぶと、上に「ダウンロード」と「削除」が出ます。ダウンロードを選ぶとZIPにまとまります。
+
+**音声の再生**
+
+![音声の再生](https://raw.githubusercontent.com/Sunwood-ai-labs/filestash-podman-sftp/main/assets/screenshots/22-audio-playing.png)
+
+WAVは波形つきのプレーヤーで開き、再生位置が進みました。
+
+**動画の再生**
+
+![動画の再生](https://raw.githubusercontent.com/Sunwood-ai-labs/filestash-podman-sftp/main/assets/screenshots/24-video-playing.png)
+
+MP4も画面の中で再生できました。3秒の動画の1秒付近です。
+
+**読み取り専用フォルダーでの拒否**
+
+![読み取り専用フォルダーでの拒否](https://raw.githubusercontent.com/Sunwood-ai-labs/filestash-podman-sftp/main/assets/screenshots/26-readonly-denied.png)
+
+書き込みを禁じたフォルダーで新しいファイルを作ろうとすると、左下に「アクセスが拒否されました」と出ました。
+
+**PDFを開いた画面（表示を確認できず）**
+
+![PDFを開いた画面（表示を確認できず）](https://raw.githubusercontent.com/Sunwood-ai-labs/filestash-podman-sftp/main/assets/screenshots/20-pdf-page1.png)
+
+2ページのPDFを開いても、本文の領域は空白のままでした。
+
+**共有リンクの作成ダイアログ（作成には至らず）**
+
+![共有リンクの作成ダイアログ（作成には至らず）](https://raw.githubusercontent.com/Sunwood-ai-labs/filestash-podman-sftp/main/assets/screenshots/27-share-options.png)
+
+「閲覧」と「編集」を選ぶところまでは表示されました。この先の設定でダイアログが閉じ、リンクは作れていません。
+
+**すべての操作を終えた後の一覧**
+
+![すべての操作を終えた後の一覧](https://raw.githubusercontent.com/Sunwood-ai-labs/filestash-podman-sftp/main/assets/screenshots/36-final-listing.png)
+
+検証用に作ったフォルダーとファイルを片付けた後の状態です。
+
 ### ファイルの中身は変わらなかったか
 
 人とエージェントのあいだでファイルを受け渡すなら、途中で中身が変わらないことが前提になります。そこで、転送や操作の前後でSHA-256を比べました。
@@ -288,7 +376,7 @@ $remote = ([string]$output[0]).TrimStart('\').Split(' ')[0].ToLowerInvariant()
 | docs | 実験時の結果表と、画面記録の確認メモ |
 | assets | グラフ、ヘッダー画像、それらの生成スクリプト |
 
-画面の記録（スクリーンショット36枚）と実行ログは、リポジトリに含めていません。
+画面の記録（スクリーンショット）は36枚のうち14枚を `assets/screenshots` に入れています。残りの22枚と実行ログは含めていません。
 
 ## 実行条件と指標の定義
 

@@ -23,6 +23,7 @@
 <p align="center">
   <a href="ARTICLE.md"><b>解説記事</b></a> ·
   <a href="#結果">結果</a> ·
+  <a href="#画面">画面</a> ·
   <a href="#自分のpcで試す">クイックスタート</a> ·
   <a href="#フォルダ構成">フォルダ構成</a> ·
   <a href="docs/RESULTS-extended.md">実測の結果表</a>
@@ -84,6 +85,27 @@
 
 対象は、自分のPCの中（127.0.0.1）だけで開ける使い捨ての環境と、小さなテスト用ファイルです。インターネット越しの利用、大きなファイル、複数人の同時利用、AIエージェントからの接続（SFTP直結やMCPゲートウェイ）は確かめていません。操作の数は、実験時の結果表を操作1つにつき1行へ書き直して数えたものです。詳しい条件は [ARTICLE.md](ARTICLE.md) と [docs/](docs/) にあります。
 
+## 画面
+
+実験で撮ったFilestashの画面です（36枚のうち14枚を [assets/screenshots/](assets/screenshots/) に収録。写っているのはテスト用のファイルだけです）。
+
+<table>
+<tr>
+<td width="50%" align="center"><img src="assets/screenshots/11-extended-listing.png" alt="日本語名のファイル一覧" width="100%"><br><sub>日本語名のファイル一覧</sub></td>
+<td width="50%" align="center"><img src="assets/screenshots/05-image-preview.png" alt="画像のプレビュー" width="100%"><br><sub>画像のプレビュー</sub></td>
+</tr>
+<tr>
+<td width="50%" align="center"><img src="assets/screenshots/19-markdown-view.png" alt="Markdownの表示（ソース表示）" width="100%"><br><sub>Markdownの表示（ソース表示）</sub></td>
+<td width="50%" align="center"><img src="assets/screenshots/24-video-playing.png" alt="動画の再生" width="100%"><br><sub>動画の再生</sub></td>
+</tr>
+<tr>
+<td width="50%" align="center"><img src="assets/screenshots/26-readonly-denied.png" alt="読み取り専用フォルダーでの拒否通知" width="100%"><br><sub>読み取り専用フォルダーでの拒否通知</sub></td>
+<td width="50%" align="center"><img src="assets/screenshots/20-pdf-page1.png" alt="PDFは表示を確認できず" width="100%"><br><sub>PDFは表示を確認できず</sub></td>
+</tr>
+</table>
+
+残りの画面と説明は [解説記事](ARTICLE.md#画面で見る) にあります。
+
 ## 自分のPCで試す
 
 WindowsでPodman machineが起動していれば試せます。
@@ -123,9 +145,9 @@ Dockerでの実行と、Windows以外のOSでは確かめていません。
 | `experiment/` | 実験で実際に動かした起動・停止・削除スクリプトと、テスト用ファイルの元 |
 | `results/` | 操作ごとの結果、ハッシュ照合、時刻の記録（`raw/` は実験時のCSVとJSON） |
 | `docs/` | 実験時の結果表、画面記録の確認メモ、独立した検収の記録 |
-| `assets/` | ヘッダー画像、グラフ、生成スクリプト（`make_charts.py`、`make_header.py`） |
+| `assets/` | ヘッダー画像、グラフ、生成スクリプト（`make_charts.py`、`make_header.py`）、実験時の画面（`screenshots/`） |
 
-`experiment/` のスクリプトは、実験時のPodman接続名と、同梱していない接続情報ファイル・サンプル画像を前提にしています。そのままでは動かないため、処理内容の参照用です。`docs/` の記録が参照している画面の記録（スクリーンショット36枚）、実行ログ、音声・動画・PDF・画像のテスト用ファイルは、このリポジトリに含めていません。
+`experiment/` のスクリプトは、実験時のPodman接続名と、同梱していない接続情報ファイル・サンプル画像を前提にしています。そのままでは動かないため、処理内容の参照用です。`docs/` の記録が参照している画面の記録（スクリーンショット）は、36枚のうち14枚を `assets/screenshots/` に同じファイル名で入れています。残りの22枚、実行ログ、音声・動画・PDF・画像のテスト用ファイルは含めていません。
 
 ## 使用したソフトウェア
 
