@@ -1,6 +1,6 @@
 # Filestash を Windows の Podman で動かし、SFTPサーバーのファイルをブラウザから操作できるか試した
 
-オープンソースのファイル管理ツール Filestash を Windows の Podman で起動し、SFTPサーバー上のファイルをブラウザから操作しました。25の操作のうち22を確認でき、転送や操作の前後でハッシュ値を比べた14ファイルのうち13が一致しました。PDFの表示、複数ファイルの同時アップロード、共有リンクの作成の3つは確認できていません。
+オープンソースのファイル管理ツール Filestash を Windows の Podman で起動し、SFTPサーバー上のファイルをブラウザから操作しました。25の操作のうち22を確認でき、転送や操作の前後でハッシュ値を比べた14ファイルのうち13が一致しました。PDFの表示、複数ファイルの同時アップロー ド、共有リンクの作成の3つは確認できていません。
 
 この実験は、クラウドで動くAIエージェントと人のあいだでファイルを受け渡す置き場を作るための下調べです。今回確かめたのは「人がブラウザで触る側」で、エージェントがつなぐ側はまだ試していません。
 
@@ -413,3 +413,7 @@ $remote = ([string]$output[0]).TrimStart('\').Split(' ')[0].ToLowerInvariant()
 - [Filestash の権限設定](https://www.filestash.app/docs/guide/authorization.html)
 - [atmoz/sftp（GitHub）](https://github.com/atmoz/sftp)
 - [この実験のリポジトリ](https://github.com/Sunwood-ai-labs/filestash-podman-sftp)
+
+---
+
+#Filestash #Podman #SFTP #セルフホスト #AIエージェント
