@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 402" width="880" height="402" role="img" aria-label="照合した14ファイルのうち13がSHA-256で一致。不一致の1つは改行コードの差" font-family="'Segoe UI','Hiragino Sans','Yu Gothic UI','Meiryo','Noto Sans JP',sans-serif">
+<rect x="0.5" y="0.5" width="879" height="401" rx="12" fill="#FFFFFF" stroke="#D1D5DB"/>
+<text x="32" y="44" font-size="20" font-weight="700" fill="#111827">照合した14ファイルのうち13がSHA-256で一致。不一致の1つは改行コードの差</text>
+<text x="32" y="70" font-size="13.5" fill="#6B7280">四角1つが1ファイル。転送や操作の前後でファイルの中身が1バイトも変わっていないかを、ハッシュ値で比べた</text>
+<text x="32" y="123" font-size="15" font-weight="700" fill="#111827">フィクスチャの配置</text>
+<text x="32" y="142" font-size="12" fill="#6B7280">ローカルの8ファイルとSFTPサーバー上の8ファイル</text>
+<rect x="420" y="108" width="38" height="26" rx="4" fill="#0F766E"/>
+<rect x="464" y="108" width="38" height="26" rx="4" fill="#0F766E"/>
+<rect x="508" y="108" width="38" height="26" rx="4" fill="#0F766E"/>
+<rect x="552" y="108" width="38" height="26" rx="4" fill="#0F766E"/>
+<rect x="596" y="108" width="38" height="26" rx="4" fill="#0F766E"/>
+<rect x="640" y="108" width="38" height="26" rx="4" fill="#0F766E"/>
+<rect x="684" y="108" width="38" height="26" rx="4" fill="#0F766E"/>
+<rect x="728" y="108" width="38" height="26" rx="4" fill="#0F766E"/>
+<text x="780" y="127" font-size="15" font-weight="700" fill="#111827">8<tspan font-weight="400" fill="#6B7280"> / 8 一致</tspan></text>
+<text x="32" y="181" font-size="15" font-weight="700" fill="#111827">アップロードしてダウンロード</text>
+<text x="32" y="200" font-size="12" fill="#6B7280">画面から上げたファイルを画面から取得し、元と比較</text>
+<rect x="420" y="166" width="38" height="26" rx="4" fill="#0F766E"/>
+<text x="472" y="185" font-size="15" font-weight="700" fill="#111827">1<tspan font-weight="400" fill="#6B7280"> / 1 一致</tspan></text>
+<text x="32" y="239" font-size="15" font-weight="700" fill="#111827">ZIPでの一括ダウンロード</text>
+<text x="32" y="258" font-size="12" fill="#6B7280">ZIPに入っていた2ファイルと元ファイル</text>
+<rect x="420" y="224" width="38" height="26" rx="4" fill="#0F766E"/>
+<rect x="464" y="224" width="38" height="26" rx="4" fill="#0F766E"/>
+<text x="516" y="243" font-size="15" font-weight="700" fill="#111827">2<tspan font-weight="400" fill="#6B7280"> / 2 一致</tspan></text>
+<text x="32" y="297" font-size="15" font-weight="700" fill="#111827">読み取り専用の2ファイル</text>
+<text x="32" y="316" font-size="12" fill="#6B7280">すべての操作が終わった後のサーバー上のファイルと初期値</text>
+<rect x="420" y="282" width="38" height="26" rx="4" fill="#0F766E"/>
+<rect x="464" y="282" width="38" height="26" rx="4" fill="#0F766E"/>
+<text x="516" y="301" font-size="15" font-weight="700" fill="#111827">2<tspan font-weight="400" fill="#6B7280"> / 2 一致</tspan></text>
+<text x="32" y="355" font-size="15" font-weight="700" fill="#111827">Markdownを編集して元に戻す</text>
+<text x="32" y="374" font-size="12" fill="#6B7280">画面で1行追記して保存し、追記を消して保存し直したファイルと初期値</text>
+<rect x="421" y="341" width="36" height="24" rx="4" fill="#FFFFFF" stroke="#111827" stroke-width="2"/>
+<path d="M434 348l10 10M444 348l-10 10" stroke="#111827" stroke-width="2"/>
+<text x="472" y="359" font-size="15" font-weight="700" fill="#111827">0<tspan font-weight="400" fill="#6B7280"> / 1 一致</tspan></text>
+<text x="558" y="359" font-size="12" fill="#111827">873→872バイト。改行コードをそろえると本文は一致</text>
+</svg>
