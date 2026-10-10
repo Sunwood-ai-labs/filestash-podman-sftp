@@ -399,9 +399,9 @@ $remote = ([string]$output[0]).TrimStart('\').Split(' ')[0].ToLowerInvariant()
 
 指標の定義と限界。
 
-- **操作の数（25）**は、実験時の2つの結果表（基本の7項目と追加の実験）を、操作1つにつき1行へ書き直して数えたものです。分け方を変えれば総数は変わります。書き直した一覧は [results/operations.json](https://github.com/Sunwood-ai-labs/filestash-podman-sftp/blob/main/results/operations.json) にあります。
+- **操作の数**（25）は、実験時の2つの結果表（基本の7項目と追加の実験）を、操作1つにつき1行へ書き直して数えたものです。分け方を変えれば総数は変わります。書き直した一覧は [results/operations.json](https://github.com/Sunwood-ai-labs/filestash-podman-sftp/blob/main/results/operations.json) にあります。
 - **確認できた**は、各操作を1回から数回試した結果です。繰り返し試して成功率を測ったものではありません。
-- **SHA-256の一致（14ファイル）**は、照合を行ったファイルの数です。すべての操作でハッシュを比べたわけではありません。
+- **SHA-256の一致**（14ファイル）は、照合を行ったファイルの数です。すべての操作でハッシュを比べたわけではありません。
 - **時間**は、実験時のログの時刻から計算しました。AIエージェントの作業時間と手戻りを含みます。
 
 ## 参考リンク
